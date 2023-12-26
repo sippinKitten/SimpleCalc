@@ -216,10 +216,10 @@ public class SimpleCalc extends JFrame {
         jbtSinus.setBorder(new LineBorder(new Color(64, 64, 64), 1));
         jtfResult.setBorder(null);
         JMenuBar menuBar = new JMenuBar();
-        JMenu helpMenu = new JMenu("Справка");
-        JMenu designMenu = new JMenu("Дизайн");
-        JMenuItem developerItem = new JMenuItem("О разработчике");
-        JMenuItem designItem = new JMenuItem("Сменить тему");
+        JMenu helpMenu = new JMenu("Г‘ГЇГ°Г ГўГЄГ ");
+        JMenu designMenu = new JMenu("Г„ГЁГ§Г Г©Г­");
+        JMenuItem developerItem = new JMenuItem("ГЋ Г°Г Г§Г°Г ГЎГ®ГІГ·ГЁГЄГҐ");
+        JMenuItem designItem = new JMenuItem("Г‘Г¬ГҐГ­ГЁГІГј ГІГҐГ¬Гі");
         designMenu.add(designItem);
         helpMenu.add(developerItem);
         menuBar.add(helpMenu);
@@ -436,10 +436,10 @@ public class SimpleCalc extends JFrame {
             }
         });
         menuBar.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
-        JFrame frame = new JFrame("О разработчике");
+        JFrame frame = new JFrame("ГЋ Г°Г Г§Г°Г ГЎГ®ГІГ·ГЁГЄГҐ");
         developerItem.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                JOptionPane.showMessageDialog(frame, "Разработчик: Иванов Данил \nСтудент группы 2А", "О разработчике", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(frame, "ГђГ Г§Г°Г ГЎГ®ГІГ·ГЁГЄ: Г€ГўГ Г­Г®Гў Г„Г Г­ГЁГ« \nГ‘ГІГіГ¤ГҐГ­ГІ ГЈГ°ГіГЇГЇГ» 2ГЂ", "ГЋ Г°Г Г§Г°Г ГЎГ®ГІГ·ГЁГЄГҐ", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
@@ -569,7 +569,7 @@ public class SimpleCalc extends JFrame {
         }
         else if (divBool == true) {
             if (TEMP == 0) {
-                JOptionPane.showMessageDialog(null, "Деление на ноль", "Ошибка°", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Г„ГҐГ«ГҐГ­ГЁГҐ Г­Г  Г­Г®Г«Гј", "ГЋГёГЁГЎГЄГ В°", JOptionPane.ERROR_MESSAGE);
             } else {
                 TEMP = START / TEMP;
             }
@@ -586,7 +586,7 @@ public class SimpleCalc extends JFrame {
         }
         else if ( tgBool == true  ) {
             if (d == 90) {
-                JOptionPane.showMessageDialog(null, "Ты балбес", "Ошибка", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Г’Г» ГЎГ Г«ГЎГҐГ±", "ГЋГёГЁГЎГЄГ ", JOptionPane.ERROR_MESSAGE);
                 return;}
             BigDecimal angle = new BigDecimal(d);
             BigDecimal result = new BigDecimal(Math.tan(Math.toRadians(angle.doubleValue())));
@@ -594,7 +594,7 @@ public class SimpleCalc extends JFrame {
         }
         else if ( sqrBool == true  ) {
             if (d < 0) {
-                JOptionPane.showMessageDialog(null, "Нельзя вычислить корень из отрицательного числа", "Ошибка", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "ГЌГҐГ«ГјГ§Гї ГўГ»Г·ГЁГ±Г«ГЁГІГј ГЄГ®Г°ГҐГ­Гј ГЁГ§ Г®ГІГ°ГЁГ¶Г ГІГҐГ«ГјГ­Г®ГЈГ® Г·ГЁГ±Г«Г ", "ГЋГёГЁГЎГЄГ ", JOptionPane.ERROR_MESSAGE);
                 return;
             }
             TEMP = Math.sqrt(d);
@@ -619,7 +619,7 @@ public class SimpleCalc extends JFrame {
         }
         else if (divBool == true) {
             if (SolveTEMP == 0) {
-                JOptionPane.showMessageDialog(null, "Деление на ноль", "Ошибка", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Г„ГҐГ«ГҐГ­ГЁГҐ Г­Г  Г­Г®Г«Гј", "ГЋГёГЁГЎГЄГ ", JOptionPane.ERROR_MESSAGE);
             } else {
                 SolveTEMP = START / SolveTEMP;
             }
@@ -636,7 +636,7 @@ public class SimpleCalc extends JFrame {
         }
         else if ( tgBool == true  ) {
             if (d == 90) {
-                JOptionPane.showMessageDialog(null, "Не существует", "Ошибка", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "ГЌГҐ Г±ГіГ№ГҐГ±ГІГўГіГҐГІ", "ГЋГёГЁГЎГЄГ ", JOptionPane.ERROR_MESSAGE);
                 return;}
             BigDecimal angle = new BigDecimal(d);
             BigDecimal result = new BigDecimal(Math.tan(Math.toRadians(angle.doubleValue())));
@@ -644,7 +644,7 @@ public class SimpleCalc extends JFrame {
         }
         else if ( sqrBool == true  ) {
             if (d < 0) {
-                JOptionPane.showMessageDialog(null, "Нельзя вычислить корень из отрицательного числа", "Ошибка", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "ГЌГҐГ«ГјГ§Гї ГўГ»Г·ГЁГ±Г«ГЁГІГј ГЄГ®Г°ГҐГ­Гј ГЁГ§ Г®ГІГ°ГЁГ¶Г ГІГҐГ«ГјГ­Г®ГЈГ® Г·ГЁГ±Г«Г ", "ГЋГёГЁГЎГЄГ ", JOptionPane.ERROR_MESSAGE);
                 return;
             }
             SolveTEMP = Math.sqrt(d);
@@ -677,6 +677,6 @@ public class SimpleCalc extends JFrame {
         calc.setLocationRelativeTo(null);
         calc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         calc.setVisible(true);
-        calc.setTitle("Калькулятор");
+        calc.setTitle("ГЉГ Г«ГјГЄГіГ«ГїГІГ®Г°");
     }
 }
